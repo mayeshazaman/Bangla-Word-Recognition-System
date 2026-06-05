@@ -1,0 +1,15 @@
+artifact_uri: file:///G:/Bangla-Word-Recognition-System/artifacts/mlflow/934557208849656332/72a1a5009d5e4408ac53db0d4fcc0f06/artifacts
+end_time: 1780522178433
+entry_point_name: ''
+experiment_id: '934557208849656332'
+lifecycle_stage: active
+run_id: 72a1a5009d5e4408ac53db0d4fcc0f06
+run_name: mobilenetv2_finetune
+run_uuid: 72a1a5009d5e4408ac53db0d4fcc0f06
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1780519378253
+status: 3
+tags: []
+user_id: MAYESHA ZAMAN
