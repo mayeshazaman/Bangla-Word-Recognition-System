@@ -3,11 +3,6 @@ app.py — Bangla OCR  |  Streamlit Prediction UI
 ================================================
 Run:
     streamlit run app.py
-
-Requires:
-    models/model.keras     — trained with train.py
-    labels.json            — produced by train.py
-    artifacts/mlflow/      — MLflow tracking directory (produced by train.py)
 """
 
 import json
