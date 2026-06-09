@@ -1,36 +1,3 @@
-"""
-train.py — BanglaLekha-Isolated OCR Training Script
-=====================================================
-Dataset  : BanglaLekha-Isolated (84 classes, ~166 K images)
-Model    : MobileNetV2 transfer-learning (fast, accurate on small images)
-Tracking : MLflow — two named runs are always recorded:
-             Run 1  "mobilenetv2_warmup"   – frozen base, head only
-             Run 2  "mobilenetv2_finetune" – top-50 base layers unfrozen
-Outputs  : models/model.keras  — best checkpoint (val accuracy)
-           labels.json         — {index: unicode_character} mapping
-           artifacts/mlflow/   — MLflow tracking directory
-
-Usage
------
-1. Put the dataset in the project root as:
-       BanglaLekha-Isolated/<class_folder>/*.png
-   or pass your own path with --data_dir.
-
-2. Install deps:
-       pip install -r requirements.txt
-
-3. Run:
-       python train.py [--data_dir BanglaLekha-Isolated]
-                       [--img_size 64]
-                       [--batch_size 64]
-                       [--epochs 5]
-                       [--fine_tune_epochs 2]
-                       [--lr 1e-3]
-                       [--fine_tune_lr 1e-4]
-                       [--val_split 0.15]
-                       [--test_split 0.05]
-                       [--experiment_name bangla_ocr]
-"""
 
 import argparse
 import json
